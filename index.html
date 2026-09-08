@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List — Week 4 Bubble Sort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="page-header">
+      <h1>ระบบรายชื่อนักศึกษา</h1>
+      <p class="subtitle">801201 | Week 4 — เรียงลำดับด้วย Bubble Sort</p>
+    </header>
+
+    <!-- ส่วนเพิ่มนักศึกษา (จาก Week 3) -->
+    <section class="add-section">
+      <div class="input-group">
+        <label for="nameInput">ชื่อนักศึกษา</label>
+        <input type="text" id="nameInput" placeholder="เช่น สมชาย ใจดี" autocomplete="off">
+        <small>ใช้ตัวอักษรไทยหรืออังกฤษเท่านั้น</small>
+      </div>
+      <div class="input-group gpa-group">
+        <label for="gpaInput">GPA</label>
+        <input type="text" id="gpaInput" placeholder="0.00 - 4.00" inputmode="decimal" maxlength="4">
+        <small>กรอกทศนิยมได้ไม่เกิน 2 ตำแหน่ง</small>
+      </div>
+      <button class="add-btn" onclick="addStudent()">+ เพิ่มรายชื่อ</button>
+    </section>
+
+    <!-- ส่วนปุ่ม Sort (ใหม่ใน Week 4) -->
+    <section class="sort-section">
+      <span class="sort-label">เรียงลำดับ</span>
+      <div class="sort-buttons">
+        <button onclick="sortBy('gpa', false)">GPA สูง → ต่ำ</button>
+        <button onclick="sortBy('gpa', true)">GPA ต่ำ → สูง</button>
+        <button onclick="sortBy('name', true)">ชื่อ A → Z</button>
+        <button onclick="sortBy('name', false)">ชื่อ Z → A</button>
+      </div>
+    </section>
+
+    <!-- แถบสถานะ -->
+    <div class="status-bar">
+      <span>จำนวนนักศึกษา: <strong id="countDisplay">0</strong> คน</span>
+      <span>สถานะ: <strong id="sortIndicator">ยังไม่ได้เรียง</strong></span>
+    </div>
+
+    <!-- รายชื่อ -->
+    <section id="studentList" class="student-list"></section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
