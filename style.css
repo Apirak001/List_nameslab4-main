@@ -1,13 +1,13 @@
 :root {
-  --ink: #17332f;
-  --muted: #74827e;
-  --line: #e5ebe7;
+  --ink: #46345f;
+  --muted: #84759a;
+  --line: #e8e0f0;
   --paper: #ffffff;
-  --canvas: #f5f7f3;
-  --accent: #1f6f62;
-  --accent-dark: #18564c;
-  --accent-soft: #eaf4ef;
-  --danger: #b44f4f;
+  --canvas: #faf7fc;
+  --accent: #9b7bb8;
+  --accent-dark: #76559a;
+  --accent-soft: #f1eafa;
+  --danger: #b45d7a;
 }
 
 * {
@@ -19,7 +19,7 @@
 body {
   min-height: 100vh;
   padding: 48px 18px;
-  background: radial-gradient(circle at top right, #dcefe8 0, transparent 34%), var(--canvas);
+  background: radial-gradient(circle at top right, #eadff5 0, transparent 34%), var(--canvas);
   color: var(--ink);
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
@@ -46,7 +46,7 @@ button:active {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 14px;
-  box-shadow: 0 18px 50px rgba(23, 51, 47, 0.08);
+  box-shadow: 0 18px 50px rgba(70, 52, 95, 0.1);
 }
 
 .page-header {
@@ -64,7 +64,7 @@ button:active {
 
 .subtitle {
   margin-top: 5px;
-  color: #b7ccc4;
+  color: #d6c8e3;
   font-size: 13px;
 }
 
@@ -99,23 +99,23 @@ button:active {
 .add-section input {
   min-width: 150px;
   padding: 11px 13px;
-  border: 1px solid #d4dfd9;
+  border: 1px solid #ded3e8;
   border-radius: 7px;
-  background: #fbfcfb;
+  background: #fdfbff;
   color: var(--ink);
   font-size: 14px;
 }
 
 .add-section input:invalid {
-  border-color: #d4dfd9;
+  border-color: #ded3e8;
 }
 
 .add-section input::placeholder {
-  color: #9ba8a3;
+  color: #afa3bb;
 }
 
 .add-section input:focus {
-  outline: 3px solid rgba(31, 111, 98, 0.14);
+  outline: 3px solid rgba(155, 123, 184, 0.18);
   border-color: var(--accent);
 }
 
@@ -159,7 +159,7 @@ button:active {
 
 .sort-buttons button {
   padding: 8px 13px;
-  border: 1px solid #cfe0d8;
+  border: 1px solid #dacbe8;
   border-radius: 6px;
   background: var(--accent-soft);
   color: var(--accent-dark);
@@ -173,7 +173,7 @@ button:active {
   flex-wrap: wrap;
   padding: 12px 34px;
   border-bottom: 1px solid var(--line);
-  background: #fbfcfa;
+  background: #fdfbff;
   color: var(--muted);
   font-size: 13px;
 }
@@ -194,7 +194,7 @@ button:active {
   align-items: center;
   gap: 14px;
   padding: 13px 34px;
-  border-bottom: 1px solid #f0f3f1;
+  border-bottom: 1px solid #f3eef7;
 }
 
 .student-item:last-child {
@@ -255,7 +255,7 @@ button:active {
 
 .empty-message {
   padding: 30px 16px;
-  color: #9ba8a3;
+  color: #afa3bb;
   text-align: center;
   font-size: 14px;
 }
